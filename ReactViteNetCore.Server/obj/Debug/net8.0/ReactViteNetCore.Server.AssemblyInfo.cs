@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReactViteNetCore.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4316ba3e46266aeeddf8e4093c5ee03055672fd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aef8cd68d393616342406646d68e166cc12ca985")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReactViteNetCore.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReactViteNetCore.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

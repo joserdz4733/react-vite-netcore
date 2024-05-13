@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Security.Principal;
 
 namespace ReactViteNetCore.Server.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -28,6 +30,14 @@ namespace ReactViteNetCore.Server.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("GetUser", Name = "GetUser")]
+        public string GetUser()
+        {
+            var user = User.Identity!;
+
+            return user?.Name ?? "";
         }
     }
 }

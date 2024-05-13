@@ -47,9 +47,9 @@ function App() {
     );
 
     async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
+        const response = await fetch('https://localhost:44301/api/weatherforecast/getuser', {credentials: "include", mode: 'cors'});
         const data = await response.json();
-        setForecasts(data);
+        console.log(data)
     }
 }
 

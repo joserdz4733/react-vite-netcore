@@ -1,4 +1,8 @@
 
+using Microsoft.AspNetCore.Authentication.Negotiate;
+using Microsoft.Extensions.Configuration;
+using Microsoft.VisualBasic;
+
 namespace ReactViteNetCore.Server
 {
     public class Program
@@ -7,7 +11,22 @@ namespace ReactViteNetCore.Server
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
+                .AddNegotiate();
+
             // Add services to the container.
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                                  policy =>
+                                  {
+                                      policy.AllowAnyHeader()
+                                        .AllowAnyMethod()
+                                        .WithOrigins("https://localhost:5173")
+                                        .AllowCredentials();
+                                  });
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -27,7 +46,7 @@ namespace ReactViteNetCore.Server
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
 
 
