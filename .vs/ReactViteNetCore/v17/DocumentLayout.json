@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joser\\code\\react-vite-netcore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB04EF53-6CF2-43F7-A4FF-3A6B29296213}|reactvitenetcore.client\\reactvitenetcore.client.esproj|c:\\users\\joser\\code\\react-vite-netcore\\reactvitenetcore.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB04EF53-6CF2-43F7-A4FF-3A6B29296213}|reactvitenetcore.client\\reactvitenetcore.client.esproj|solutionrelative:reactvitenetcore.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\joser\\code\\react-vite-netcore\\reactvitenetcore.client\\package.json",
+              "RelativeDocumentMoniker": "reactvitenetcore.client\\package.json",
+              "ToolTip": "C:\\Users\\joser\\code\\react-vite-netcore\\reactvitenetcore.client\\package.json",
+              "RelativeToolTip": "reactvitenetcore.client\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T04:22:53.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
